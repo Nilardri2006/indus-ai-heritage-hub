@@ -15,30 +15,30 @@ const HeroSection = () => {
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-background via-secondary to-accent/20 overflow-hidden">
+    <section id="Home" className="relative min-h-screen bg-gradient-to-br from-background via-secondary to-accent/20 overflow-hidden">
       {/* Enhanced Background Pattern */}
       <div className="absolute inset-0 opacity-5 overflow-hidden">
-        <div 
+        <div
           className="absolute top-10 left-10 w-32 h-32 bg-cultural-red rounded-full animate-float"
           style={{
             transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`
           }}
         ></div>
-        <div 
+        <div
           className="absolute bottom-20 right-20 w-48 h-48 bg-primary rounded-full animate-float"
           style={{
             animationDelay: '1s',
             transform: `translate(${mousePosition.x * -0.01}px, ${mousePosition.y * -0.01}px)`
           }}
         ></div>
-        <div 
+        <div
           className="absolute top-1/2 left-1/4 w-24 h-24 bg-accent rounded-full animate-float"
           style={{
             animationDelay: '2s',
             transform: `translate(${mousePosition.x * 0.015}px, ${mousePosition.y * 0.015}px)`
           }}
         ></div>
-        
+
         {/* Cultural Motifs */}
         <div className="absolute top-1/4 right-1/3 animate-rotate-slow">
           <svg width="100" height="100" className="text-accent fill-current opacity-20">
@@ -49,7 +49,7 @@ const HeroSection = () => {
 
       <div className="container mx-auto px-4 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
@@ -57,9 +57,9 @@ const HeroSection = () => {
                 Where <span className="text-transparent bg-gradient-cultural bg-clip-text animate-glow">Tradition</span> Meets{" "}
                 <span className="text-transparent bg-gradient-heritage bg-clip-text animate-glow" style={{ animationDelay: '0.5s' }}>Innovation</span>
               </h1>
-              
+
               <p className="text-xl md:text-2xl text-muted-foreground font-inter leading-relaxed animate-fade-in-left" style={{ animationDelay: '0.3s' }}>
-                Discover authentic Indian folk art and heritage crafts. 
+                Discover authentic Indian folk art and heritage crafts.
                 Empowering artisans through AI-powered storytelling.
               </p>
             </div>
@@ -102,16 +102,16 @@ const HeroSection = () => {
               {/* Main Featured Art */}
               <div className="col-span-2 relative group animate-slide-up" style={{ animationDelay: '0.1s' }}>
                 <div className="overflow-hidden rounded-2xl shadow-heritage bg-card transform hover:scale-[1.02] transition-all duration-500 relative">
-                  <img 
-                    src={folkArt2} 
-                    alt="Traditional Pattachitra Folk Art" 
+                  <img
+                    src={folkArt2}
+                    alt="Traditional Pattachitra Folk Art"
                     className="w-full h-80 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-2xl group-hover:from-black/40 transition-all duration-500"></div>
-                  
+
                   {/* Shimmer effect */}
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                  
+
                   <div className="absolute bottom-4 left-4 right-4 transform group-hover:translate-y-[-8px] transition-transform duration-300">
                     <h3 className="text-white font-playfair text-xl font-semibold mb-1 animate-bounce-gentle">Pattachitra Painting</h3>
                     <p className="text-white/80 font-inter text-sm">Traditional Odisha Folk Art</p>
@@ -122,20 +122,20 @@ const HeroSection = () => {
               {/* Enhanced Secondary Arts */}
               {[
                 { src: folkArt1, title: 'Kalighat Art', delay: '0.2s' },
-                { src: folkArt3, title: 'Dance Folk Art', delay: '0.3s' }
+                { src: folkArt3, title: 'Madhubani Art', delay: '0.3s' }
               ].map((art, index) => (
                 <div key={art.title} className="relative group animate-slide-up" style={{ animationDelay: art.delay }}>
                   <div className="overflow-hidden rounded-xl shadow-elegant bg-card transform hover:scale-105 hover:rotate-1 transition-all duration-500 relative">
-                    <img 
-                      src={art.src} 
-                      alt={art.title} 
+                    <img
+                      src={art.src}
+                      alt={art.title}
                       className="w-full h-48 object-cover transition-all duration-500 group-hover:scale-110 group-hover:brightness-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl group-hover:from-black/30 transition-all duration-500"></div>
-                    
+
                     {/* Floating effect on hover */}
                     <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl"></div>
-                    
+
                     <div className="absolute bottom-3 left-3 transform group-hover:translate-y-[-4px] transition-transform duration-300">
                       <h4 className="text-white font-playfair font-semibold group-hover:animate-bounce-gentle">
                         {art.title}
@@ -147,9 +147,12 @@ const HeroSection = () => {
             </div>
 
             {/* Enhanced Floating Badge */}
-            <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full font-inter font-semibold text-sm shadow-heritage animate-float hover:animate-bounce-gentle cursor-pointer transform hover:scale-110 transition-all duration-300">
-              <span className="inline-block animate-pulse-soft">✨</span> AI Enhanced
+            <div className="fixed bottom-6 right-6 bg-yellow-500 text-white px-6 py-3 rounded-full font-inter font-semibold text-base shadow-lg cursor-pointer transform hover:scale-110 transition-all duration-300 z-50">
+              <span className="inline-block animate-pulse-soft text-lg">Mitra</span> ✨
             </div>
+
+
+
           </div>
         </div>
       </div>

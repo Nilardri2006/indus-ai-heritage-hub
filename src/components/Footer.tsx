@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-playfair font-bold mb-3">Indus AI</h3>
+              <h3 className="text-2xl font-playfair font-bold mb-3">ईndus AI</h3>
               <p className="text-background/80 font-inter leading-relaxed">
                 Empowering Indian artisans through AI-powered storytelling and connecting traditional heritage with modern audiences worldwide.
               </p>
@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3 text-background/80">
                 <Mail className="h-5 w-5 text-accent" />
-                <span className="font-inter">hello@indusai.com</span>
+                <span className="font-inter">hello@ईndusai.com</span>
               </div>
               <div className="flex items-center space-x-3 text-background/80">
                 <Phone className="h-5 w-5 text-accent" />
@@ -38,10 +38,9 @@ const Footer = () => {
           <div className="space-y-6">
             <h4 className="text-lg font-playfair font-semibold text-accent">Shop</h4>
             <nav className="space-y-3">
-              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Art Prints</a>
-              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Home Décor</a>
-              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Handcrafted Items</a>
-              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Digital AI Folk Art</a>
+              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Home</a>
+              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">ArtWorks</a>
+              <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Stories</a>
               <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">New Arrivals</a>
               <a href="#" className="block text-background/80 hover:text-accent transition-colors font-inter">Best Sellers</a>
             </nav>
@@ -121,7 +120,7 @@ const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
             <p className="text-background/60 font-inter text-sm text-center md:text-left">
-              © {currentYear} Indus AI. All rights reserved. Made with ❤️ in India.
+              © {currentYear} ईndus AI. All rights reserved. Made with ❤️ in India.
             </p>
             
             <div className="flex items-center space-x-2">
